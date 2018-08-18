@@ -1,0 +1,103 @@
+.gallery{
+  margin: 4%;
+}
+
+.showcase{
+  margin-top: 1%;
+  display: flex;
+  height: 100%;;
+  flex-wrap: nowrap;
+  padding: 0;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.project{
+  border: 4px solid white;
+  color: white;
+  width: 20%;
+  margin:5%;
+  flex-grow: 1;
+  padding: 0;
+  height: 35vh;
+  background: linear-gradient(to left, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background 2s ease, transform 0.5s ease;
+  transform: scale(1);
+}
+.project:hover{
+  background-position: left bottom;
+  transform: scale(1.02);
+}
+.project:hover h2{
+  animation-name: showDesc;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+
+.project:hover .description{
+  animation-name: showDesc;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.project h2{
+  word-wrap: break-word;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex-grow: 1;
+  position: absolute;
+  max-height: 35vh;
+  width: 100%
+}
+.showcase a{
+  display: block;
+  height: 100%;
+  width:100%;
+}
+.description{
+
+  opacity: 0;
+  margin: 0;
+  position: absolute;
+  color: black;
+  z-index: 1;
+  width:100%;
+  max-height:100%;
+  word-wrap: break-word;
+}
+@keyframes showDesc{
+  from {opacity: 0;}
+  to{opacity: 1;}
+}
+@media only screen and (max-width: 765px) {
+
+  .showcase{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+  }
+  .project{
+    min-width: 70%;
+    margin: auto;
+    padding: 0;
+    margin-top:3%;
+  }
+  .project h2{
+    display: block;
+    position: relative;
+    max-width: 70%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .description{
+    width: 70%;
+    position: relative;
+  }
+
+}

@@ -1,0 +1,14 @@
+section > *{
+  opacity: 0;
+}
+@keyframes show {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.visible{
+  animation-name: show;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

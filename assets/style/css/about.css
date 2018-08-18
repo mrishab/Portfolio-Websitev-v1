@@ -1,0 +1,20 @@
+#about p{
+  color:white;
+  text-shadow: 0px 0px 50px black;
+  font-size: 1.3em;
+  text-align: justify;
+  margin: 2% 6%;
+  font-weight: bold;
+}
+#about img{
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+.img{
+  display: flex;
+  justify-content: space-around;
+}
+.sentence:hover{
+  background-color: rgba(255, 94, 0, 0.49);
+}

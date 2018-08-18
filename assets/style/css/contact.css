@@ -1,0 +1,16 @@
+
+.icons{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;s
+}
+.icon{
+  flex-grow: 1;
+  max-width: 30%;
+}
+.icons a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,19 @@
+{
+	"name": "inviewport",
+	"version": "0.1.7",
+	"title": "inViewPort",
+	"author": {
+		"name": "Henk Bulder",
+		"url": "https://github.com/henkbulder"
+		},
+	"licenses": [{
+		"type": "MIT",
+		"url": "http://opensource.org/licenses/MIT"
+		}],
+	"dependencies": {"jquery": "*"},
+	"description": "jQuery plugin that adds a CSS class to selected elements when they have been scrolled into the viewport for the first time.",
+	"keywords": ["visible", "scroll", "viewport"],
+	"homepage": "http://henkbulder.github.io/inViewPort/",
+	"docs": "http://henkbulder.github.io/inViewPort/",
+	"bugs": "https://github.com/henkbulder/inViewPort/issues"
+}

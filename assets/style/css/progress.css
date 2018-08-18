@@ -1,0 +1,28 @@
+.loader {
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		opacity: 1;
+		border: 16px solid #f3f3f3; /* Light grey */
+		border-top: 16px solid blue;
+	  border-bottom: 16px solid blue;
+		border-radius: 50%;
+		width: 120px;
+		height: 120px;
+		animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+}
+
+.loading_text{
+	text-align: left;
+	width: 50%;
+	margin-left: 4%;
+	margin-top: 150px;
+	color: white;
+	font-size: 50px;
+}
